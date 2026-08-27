@@ -1,1 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <title>Philosophy — SHAPE MATTER</title>
+
+  <meta
+    name="description"
+    content="A philosophy of thoughtful products and experiences, shaped through understanding, simplicity, authenticity, and attention to detail."
+  >
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --black: #111111;
+      --muted: #666666;
+      --light: #888888;
+      --background: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--background);
+      color: var(--black);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 42px 48px 28px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 80px 0;
+    }
+
+    h1 {
+      max-width: 800px;
+      margin-bottom: 48px;
+
+      font-size: clamp(56px, 7vw, 82px);
+      line-height: 0.98;
+      font-weight: 400;
+      letter-spacing: -0.055em;
+
+      color: var(--black);
+    }
+
+    .about-text {
+      max-width: 650px;
+    }
+
+    .about-text p {
+      margin-bottom: 28px;
+
+      font-size: 17px;
+      line-height: 1.72;
+      font-weight: 400;
+      letter-spacing: -0.005em;
+
+      color: var(--muted);
+    }
+
+    .about-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .statement {
+      margin-top: 28px;
+      max-width: 520px;
+    }
+
+    .statement p {
+      margin-bottom: 4px;
+
+      font-size: clamp(16px, 1.4vw, 18px);
+      line-height: 1.45;
+      font-weight: 400;
+      letter-spacing: -0.012em;
+
+      color: var(--black);
+    }
+
+    .statement p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Menu */
+    header {
+      width: 100%;
+      max-width: 880px;
+      margin: 0 auto;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      display: inline-block;
+
+      color: var(--black);
+      text-decoration: none;
+
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 500;
+      letter-spacing: -0.005em;
+
+      border-bottom: 1px solid var(--black);
+      padding-bottom: 3px;
+
+      transition: opacity 180ms ease;
+    }
+
+    nav a:hover {
+      opacity: 0.5;
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding-top: 30px;
+
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+
+      color: var(--light);
+    }
+
+    footer a {
+      color: var(--light);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+
+      transition: opacity 180ms ease;
+    }
+
+    footer a:hover {
+      opacity: 0.5;
+    }
+
+    /* Tablet / mobile */
+    @media (max-width: 600px) {
+
+      .page {
+        padding: 28px 24px 22px;
+      }
+
+      .content {
+        padding: 60px 0;
+      }
+
+      h1 {
+        margin-bottom: 36px;
+
+        font-size: clamp(48px, 14vw, 68px);
+        line-height: 1;
+        letter-spacing: -0.06em;
+      }
+
+      .about-text p {
+        margin-bottom: 24px;
+
+        font-size: 15px;
+        line-height: 1.72;
+      }
+
+      .statement {
+        margin-top: 24px;
+      }
+
+      .statement p {
+        font-size: 16px;
+        line-height: 1.45;
+      }
+
+      header {
+        max-width: 880px;
+        justify-content: flex-start;
+      }
+
+      nav {
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      footer {
+        padding-top: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+    }
+
+    /* Very small screens */
+    @media (max-width: 380px) {
+
+      .page {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+
+      nav {
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- Main content -->
+    <main>
+      <section class="content">
+
+        <h1>Philosophy</h1>
+
+        <div class="about-text">
+
+          <p>
+            Good work begins with understanding. The context, the purpose,
+            the people, and the details all matter. Clarity comes from looking
+            closely before deciding what needs to change, what belongs, and
+            what can be left alone.
+          </p>
+
+          <p>
+            Simplicity comes from knowing what is necessary. Each element
+            should have a reason to be there and contribute to the whole.
+            Detail matters when it adds meaning, function, or character;
+            otherwise, it can become unnecessary.
+          </p>
+
+          <p>
+            Products, services, and experiences are closely connected. The way
+            something is made influences how it is presented, received, used,
+            and remembered. The experience around a product can be as important
+            to its character as the product itself.
+          </p>
+
+          <p>
+            Authenticity matters more than appearance. Clarity matters, and
+            nothing needs to be added simply for the sake of it. What feels
+            unclear, unnecessary, exaggerated, or inconsistent can be
+            questioned and refined until the whole feels natural, purposeful,
+            and true to what it is.
+          </p>
+
+          <p>
+            We regularly reach out to organisations whose products or
+            experiences make us curious. Sometimes that leads to a project.
+            Sometimes it simply leads to a conversation and a better
+            understanding of why things are the way they are.
+          </p>
+
+        </div>
+
+        <div class="statement">
+          <p>Considered by approach.</p>
+          <p>Confident by nature.</p>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Menu -->
+    <header>
+
+      <nav aria-label="Main navigation">
+        <a href="shape.html">Home</a>
+        <a href="about-shape.html">About</a>
+        <a href="mailto:contact@shape.mu">Get in touch</a>
+      </nav>
+
+    </header>
+
+    <!-- Footer -->
+    <footer>
+
+      <span>
+        SHAPE MATTER © 2026
+      </span>
+
+      <span>
+        <a href="privacy.html">Privacy</a>
+        ·
+        <a href="terms.html">Terms</a>
+      </span>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
