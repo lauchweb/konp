@@ -1,1 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <title>Terms — Konpran</title>
+
+  <meta
+    name="description"
+    content="The terms governing the use of the Konpran website and its content."
+  >
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --black: #111111;
+      --muted: #666666;
+      --light: #888888;
+      --background: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--background);
+      color: var(--black);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 42px 48px 28px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 80px 0;
+    }
+
+    h1 {
+      max-width: 800px;
+      margin-bottom: 40px;
+
+      font-size: clamp(56px, 7vw, 82px);
+      line-height: 0.98;
+      font-weight: 400;
+      letter-spacing: -0.055em;
+
+      color: var(--black);
+    }
+
+    .description {
+      max-width: 680px;
+      margin-bottom: 28px;
+
+      font-size: 18px;
+      line-height: 1.7;
+      font-weight: 400;
+      letter-spacing: -0.005em;
+
+      color: var(--muted);
+    }
+
+    .description a {
+      color: var(--black);
+      text-decoration: none;
+      border-bottom: 1px solid var(--black);
+    }
+
+    .description a:hover {
+      opacity: 0.5;
+    }
+
+    .section-title {
+      max-width: 680px;
+      margin-top: 40px;
+      margin-bottom: 12px;
+
+      font-size: 24px;
+      line-height: 1.35;
+      font-weight: 400;
+      letter-spacing: -0.025em;
+
+      color: var(--black);
+    }
+
+    /* Menu */
+    header {
+      width: 100%;
+      max-width: 880px;
+      margin: 0 auto;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      display: inline-block;
+
+      color: var(--black);
+      text-decoration: none;
+
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 500;
+      letter-spacing: -0.005em;
+
+      border-bottom: 1px solid var(--black);
+      padding-bottom: 3px;
+
+      transition: opacity 180ms ease;
+    }
+
+    nav a:hover {
+      opacity: 0.5;
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding-top: 30px;
+
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+
+      color: var(--light);
+    }
+
+    footer a {
+      color: var(--light);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+
+      transition: opacity 180ms ease;
+    }
+
+    footer a:hover {
+      opacity: 0.5;
+    }
+
+    /* Tablet / mobile */
+    @media (max-width: 600px) {
+
+      .page {
+        padding: 28px 24px 22px;
+      }
+
+      .content {
+        padding: 60px 0;
+      }
+
+      h1 {
+        margin-bottom: 32px;
+
+        font-size: clamp(48px, 14vw, 68px);
+        line-height: 1;
+        letter-spacing: -0.06em;
+      }
+
+      .description {
+        margin-bottom: 26px;
+
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      .section-title {
+        margin-top: 32px;
+        margin-bottom: 10px;
+
+        font-size: 22px;
+        line-height: 1.4;
+      }
+
+      header {
+        max-width: 880px;
+        justify-content: flex-start;
+      }
+
+      nav {
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      footer {
+        padding-top: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+    }
+
+    /* Very small screens */
+    @media (max-width: 380px) {
+
+      .page {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+
+      nav {
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- Main content -->
+    <main>
+      <section class="content">
+
+        <h1>Terms</h1>
+
+        <p class="description">
+          By using this website, you agree to use it responsibly and in a
+          way that does not interfere with its operation or the rights of
+          others.
+        </p>
+
+        <h2 class="section-title">
+          Website content
+        </h2>
+
+        <p class="description">
+          The content on this website, including text, images, graphics,
+          design, and other materials, belongs to Konpran unless otherwise
+          stated. It is provided for general information and may not be
+          reproduced, copied, or used commercially without permission.
+        </p>
+
+        <h2 class="section-title">
+          Our work
+        </h2>
+
+        <p class="description">
+          Information about our work, approach, and capabilities on this
+          website is provided for general purposes. Nothing on the website
+          creates a client relationship or constitutes a formal proposal
+          or agreement.
+        </p>
+
+        <h2 class="section-title">
+          External links
+        </h2>
+
+        <p class="description">
+          This website may contain links to external websites or services.
+          Konpran is not responsible for the content, availability, or
+          practices of websites that we do not operate.
+        </p>
+
+        <h2 class="section-title">
+          Changes
+        </h2>
+
+        <p class="description">
+          We may update or change the content of this website and these
+          terms from time to time. The latest version will always be
+          published on this page.
+        </p>
+
+        <h2 class="section-title">
+          Contact
+        </h2>
+
+        <p class="description">
+          If you have a question about these terms, you can contact us at
+          <a href="mailto:talk@konpran.com">talk@konpran.com</a>.
+        </p>
+
+      </section>
+    </main>
+
+    <!-- Menu -->
+    <header>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="philosophy.html">Philosophy</a>
+        <a href="mailto:talk@konpran.com">Get in touch</a>
+      </nav>
+
+    </header>
+
+    <!-- Footer -->
+    <footer>
+
+      <span>
+        KONPRAN © 2026
+      </span>
+
+      <span>
+        <a href="privacy.html">Privacy</a>
+        ·
+        <a href="terms.html">Terms</a>
+      </span>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
