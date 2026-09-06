@@ -15,7 +15,6 @@
   <style>
     :root {
       --black: #111111;
-      --muted: #666666;
       --light: #888888;
       --background: #ffffff;
     }
@@ -56,6 +55,8 @@
       padding: 42px 48px 28px;
     }
 
+    /* Main */
+
     main {
       flex: 1;
 
@@ -76,11 +77,15 @@
       padding: 80px 0;
     }
 
+    /* Article links */
+
     .note {
       display: inline-block;
 
       color: var(--black);
-      text-decoration: none;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
 
       font-size: 18px;
       line-height: 1.7;
@@ -100,7 +105,7 @@
       opacity: 0.5;
     }
 
-    /* Menu — same position and styling as the homepage */
+    /* Menu */
 
     header {
       width: 100%;
@@ -161,7 +166,6 @@
     footer a {
       color: var(--light);
       text-decoration: none;
-
       border-bottom: 1px solid transparent;
 
       transition: opacity 180ms ease;
@@ -186,6 +190,8 @@
       .note {
         font-size: 16px;
         line-height: 1.7;
+
+        text-underline-offset: 3px;
       }
 
       .note + .note {
@@ -274,12 +280,12 @@
 
     </main>
 
-    <!-- Menu — only Back to home -->
+    <!-- Menu -->
 
     <header>
 
       <nav aria-label="Main navigation">
-        <a href="index.html">Back to home</a>
+        <a href="index.html">Home</a>
       </nav>
 
     </header>
