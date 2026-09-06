@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Notes — Konpran</title>
+
+  <meta
+    name="description"
+    content="Notes from Konpran on products, experiences, design and the things that shape them."
+  >
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --black: #111111;
+      --muted: #666666;
+      --light: #888888;
+      --background: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--background);
+      color: var(--black);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 42px 48px 28px;
+    }
+
+    main {
+      flex: 1;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .notes {
+      width: 100%;
+      max-width: 880px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      padding: 80px 0;
+    }
+
+    .note {
+      display: inline-block;
+
+      color: var(--black);
+      text-decoration: none;
+
+      font-size: 18px;
+      line-height: 1.7;
+      font-weight: 400;
+      letter-spacing: -0.005em;
+
+      text-align: center;
+
+      border-bottom: 1px solid transparent;
+
+      transition:
+        opacity 180ms ease,
+        border-color 180ms ease;
+    }
+
+    .note + .note {
+      margin-top: 22px;
+    }
+
+    .note:hover {
+      opacity: 0.5;
+    }
+
+    footer {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding-top: 30px;
+
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+
+      color: var(--light);
+    }
+
+    footer a {
+      color: var(--light);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+
+      transition: opacity 180ms ease;
+    }
+
+    footer a:hover {
+      opacity: 0.5;
+    }
+
+    @media (max-width: 600px) {
+
+      .page {
+        padding: 28px 24px 22px;
+      }
+
+      .notes {
+        padding: 60px 0;
+      }
+
+      .note {
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      .note + .note {
+        margin-top: 20px;
+      }
+
+      footer {
+        padding-top: 24px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 8px;
+      }
+    }
+
+    @media (max-width: 380px) {
+
+      .page {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <main>
+
+      <section class="notes" aria-label="Notes">
+
+        <a class="note" href="what-is-already-there.html">
+          What Is Already There
+        </a>
+
+        <a class="note" href="understanding-before-changing.html">
+          Understanding Before Changing
+        </a>
+
+        <a class="note" href="the-whole-is-experienced.html">
+          The Whole Is Experienced
+        </a>
+
+        <a class="note" href="the-value-of-leaving-things-alone.html">
+          The Value of Leaving Things Alone
+        </a>
+
+      </section>
+
+    </main>
+
+    <footer>
+
+      <span>
+        KONPRAN © 2026
+      </span>
+
+      <span>
+        <a href="privacy.html">Privacy</a>
+        ·
+        <a href="terms.html">Terms</a>
+      </span>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
