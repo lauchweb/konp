@@ -93,10 +93,17 @@
       color: var(--muted);
     }
 
+    /*
+      Body links remain visible, but the underline is deliberately
+      quieter than the main navigation.
+    */
+
     .description a {
       color: var(--black);
       text-decoration: none;
-      border-bottom: 1px solid var(--black);
+      border-bottom: 1px solid #cfcfcf;
+
+      transition: opacity 180ms ease;
     }
 
     .description a:hover {
@@ -117,6 +124,7 @@
     }
 
     /* Menu */
+
     header {
       width: 100%;
       max-width: 880px;
@@ -155,6 +163,7 @@
     }
 
     /* Footer */
+
     footer {
       width: 100%;
       display: flex;
@@ -184,6 +193,7 @@
     }
 
     /* Tablet / mobile */
+
     @media (max-width: 600px) {
 
       .page {
@@ -233,13 +243,16 @@
 
       footer {
         padding-top: 24px;
+
         flex-direction: column;
         align-items: flex-start;
+
         gap: 8px;
       }
     }
 
     /* Very small screens */
+
     @media (max-width: 380px) {
 
       .page {
@@ -263,7 +276,9 @@
   <div class="page">
 
     <!-- Main content -->
+
     <main>
+
       <section class="content">
 
         <h1>Privacy</h1>
@@ -317,9 +332,11 @@
         </p>
 
       </section>
+
     </main>
 
     <!-- Menu -->
+
     <header>
 
       <nav aria-label="Main navigation">
@@ -329,6 +346,7 @@
     </header>
 
     <!-- Footer -->
+
     <footer>
 
       <span>
