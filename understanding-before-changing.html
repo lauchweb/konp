@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Understanding Before Changing — Konpran</title>
+
+  <meta
+    name="description"
+    content="Understanding before changing: a note from Konpran on looking closely at what already exists."
+  >
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --black: #111111;
+      --muted: #666666;
+      --light: #888888;
+      --background: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--background);
+      color: var(--black);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 42px 48px 28px;
+    }
+
+    /* Main article */
+
+    main {
+      flex: 1;
+
+      display: flex;
+      justify-content: center;
+    }
+
+    article {
+      width: 100%;
+      max-width: 880px;
+
+      padding: 110px 0 100px;
+    }
+
+    h1 {
+      max-width: 680px;
+
+      margin-bottom: 42px;
+
+      font-size: 28px;
+      line-height: 1.3;
+      font-weight: 400;
+      letter-spacing: -0.015em;
+
+      color: var(--black);
+    }
+
+    .article-body {
+      max-width: 680px;
+    }
+
+    .article-body p {
+      margin-bottom: 28px;
+
+      font-size: 18px;
+      line-height: 1.7;
+      font-weight: 400;
+      letter-spacing: -0.005em;
+
+      color: var(--muted);
+    }
+
+    .article-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Navigation */
+
+    header {
+      width: 100%;
+      max-width: 880px;
+      margin: 0 auto;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      display: inline-block;
+
+      color: var(--black);
+      text-decoration: none;
+
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 500;
+      letter-spacing: -0.005em;
+
+      border-bottom: 1px solid var(--black);
+      padding-bottom: 3px;
+
+      transition: opacity 180ms ease;
+    }
+
+    nav a:hover {
+      opacity: 0.5;
+    }
+
+    /* Footer */
+
+    footer {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding-top: 30px;
+
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+
+      color: var(--light);
+    }
+
+    footer a {
+      color: var(--light);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+
+      transition: opacity 180ms ease;
+    }
+
+    footer a:hover {
+      opacity: 0.5;
+    }
+
+    /* Tablet / mobile */
+
+    @media (max-width: 600px) {
+
+      .page {
+        padding: 28px 24px 22px;
+      }
+
+      article {
+        padding: 70px 0 60px;
+      }
+
+      h1 {
+        margin-bottom: 34px;
+
+        font-size: 24px;
+        line-height: 1.35;
+      }
+
+      .article-body p {
+        margin-bottom: 26px;
+
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      header {
+        max-width: 880px;
+        justify-content: flex-start;
+      }
+
+      nav {
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      footer {
+        padding-top: 24px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 8px;
+      }
+    }
+
+    /* Very small screens */
+
+    @media (max-width: 380px) {
+
+      .page {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <main>
+
+      <article>
+
+        <h1>
+          Understanding Before Changing
+        </h1>
+
+        <div class="article-body">
+
+          <p>
+            There is often an expectation that good work begins with an
+            answer. Something needs to improve, so something must change.
+            An experience feels difficult, so it must be redesigned. A
+            product is not performing as expected, so something must be
+            added, removed, or replaced.
+          </p>
+
+          <p>
+            But change is not necessarily progress.
+          </p>
+
+          <p>
+            Before deciding what should be different, it is worth
+            understanding what is already there.
+          </p>
+
+          <p>
+            Not only what something does, but why it has become what it is.
+            Who uses it. When they use it. What they expect from it. What
+            surrounds it. What has accumulated around it over time. What is
+            deliberate, and what is simply the result of decisions made
+            before.
+          </p>
+
+          <p>
+            Looking closely can reveal that what first appears to be a
+            problem is sometimes only a symptom.
+          </p>
+
+          <p>
+            A complicated interface may not have an interface problem. A
+            confusing service may not need another layer of communication.
+            A product that feels difficult may be carrying decisions that
+            were made elsewhere, for reasons that are no longer visible.
+          </p>
+
+          <p>
+            Without understanding the whole, it is easy to improve the
+            wrong thing.
+          </p>
+
+          <p>
+            There is something reassuring about making a change. A new
+            feature is visible. A redesigned interface looks different.
+            A new process can be described, measured, and presented.
+          </p>
+
+          <p>
+            Understanding is less visible.
+          </p>
+
+          <p>
+            It takes time to observe. To ask questions. To follow something
+            through its different contexts. To notice the small
+            inconsistencies that initially seem unimportant. To understand
+            what people actually do rather than what they are expected to
+            do.
+          </p>
+
+          <p>
+            It can feel as though nothing is happening.
+          </p>
+
+          <p>
+            But this is often where the most important decisions are being
+            made.
+          </p>
+
+          <p>
+            The decision not to change something can be as considered as the
+            decision to change it.
+          </p>
+
+          <p>
+            Nothing exists entirely on its own. A product sits within an
+            experience. An experience sits within a context. A context is
+            shaped by people, expectations, habits, environments, and
+            systems.
+          </p>
+
+          <p>
+            Changing one part can affect all the others.
+          </p>
+
+          <p>
+            This is why an isolated improvement can sometimes make the
+            overall experience worse. A feature may work perfectly on its
+            own while making the wider product more difficult. An object
+            can be carefully considered yet feel disconnected from the way
+            it is presented or used. A service can become efficient
+            internally while remaining frustrating to the person
+            experiencing it.
+          </p>
+
+          <p>
+            The individual part may be correct.
+          </p>
+
+          <p>
+            The whole may not be.
+          </p>
+
+          <p>
+            Understanding means moving between these levels without losing
+            sight of either.
+          </p>
+
+          <p>
+            Once something is understood more clearly, another question
+            becomes possible: what actually needs to be there?
+          </p>
+
+          <p>
+            Not everything that exists needs to remain.
+          </p>
+
+          <p>
+            Some things have accumulated because they were useful once.
+            Some remain because nobody questioned them. Some are there
+            because adding something felt easier than removing it.
+          </p>
+
+          <p>
+            Simplicity is therefore not a visual quality alone. It is not
+            a matter of making something look minimal. It comes from
+            knowing what is necessary and having the confidence to leave
+            the rest alone.
+          </p>
+
+          <p>
+            That requires judgement.
+          </p>
+
+          <p>
+            A detail may be small but essential. Another may be prominent
+            but unnecessary. One element may carry meaning, while another
+            merely creates noise.
+          </p>
+
+          <p>
+            The work is not to remove as much as possible.
+          </p>
+
+          <p>
+            It is to understand enough to know what deserves to remain.
+          </p>
+
+          <p>
+            Good work does not always begin by asking what should be made.
+            Sometimes it begins with a quieter question:
+          </p>
+
+          <p>
+            What is this really trying to be?
+          </p>
+
+          <p>
+            From there, other things become clearer. What is its purpose?
+            What should it feel like? What should it make possible? What
+            belongs to it? What has been added without reason? What has
+            been overlooked?
+          </p>
+
+          <p>
+            Only after those questions have been explored does change
+            become meaningful.
+          </p>
+
+          <p>
+            The objective is not to change for the sake of improvement.
+            It is to understand deeply enough that what should happen next
+            becomes clearer.
+          </p>
+
+          <p>
+            Sometimes that means making something different.
+          </p>
+
+          <p>
+            Sometimes it means making less.
+          </p>
+
+          <p>
+            And sometimes the most considered decision is to leave
+            something exactly as it is.
+          </p>
+
+        </div>
+
+      </article>
+
+    </main>
+
+    <!-- Navigation -->
+
+    <header>
+
+      <nav aria-label="Notes navigation">
+        <a href="notes.html">Notes</a>
+      </nav>
+
+    </header>
+
+    <!-- Footer -->
+
+    <footer>
+
+      <span>
+        KONPRAN © 2026
+      </span>
+
+      <span>
+        <a href="privacy.html">Privacy</a>
+        ·
+        <a href="terms.html">Terms</a>
+      </span>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
