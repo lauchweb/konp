@@ -89,11 +89,7 @@
 
       text-align: center;
 
-      border-bottom: 1px solid transparent;
-
-      transition:
-        opacity 180ms ease,
-        border-color 180ms ease;
+      transition: opacity 180ms ease;
     }
 
     .note + .note {
@@ -103,6 +99,47 @@
     .note:hover {
       opacity: 0.5;
     }
+
+    /* Menu — same position and styling as the homepage */
+
+    header {
+      width: 100%;
+      max-width: 880px;
+      margin: 0 auto;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      display: inline-block;
+
+      color: var(--black);
+      text-decoration: none;
+
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 500;
+      letter-spacing: -0.005em;
+
+      border-bottom: 1px solid var(--black);
+      padding-bottom: 3px;
+
+      transition: opacity 180ms ease;
+    }
+
+    nav a:hover {
+      opacity: 0.5;
+    }
+
+    /* Footer */
 
     footer {
       width: 100%;
@@ -124,6 +161,7 @@
     footer a {
       color: var(--light);
       text-decoration: none;
+
       border-bottom: 1px solid transparent;
 
       transition: opacity 180ms ease;
@@ -132,6 +170,8 @@
     footer a:hover {
       opacity: 0.5;
     }
+
+    /* Tablet / mobile */
 
     @media (max-width: 600px) {
 
@@ -152,6 +192,20 @@
         margin-top: 20px;
       }
 
+      header {
+        max-width: 880px;
+        justify-content: flex-start;
+      }
+
+      nav {
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
       footer {
         padding-top: 24px;
 
@@ -162,11 +216,17 @@
       }
     }
 
+    /* Very small screens */
+
     @media (max-width: 380px) {
 
       .page {
         padding-left: 20px;
         padding-right: 20px;
+      }
+
+      nav {
+        gap: 14px;
       }
     }
   </style>
@@ -176,29 +236,55 @@
 
   <div class="page">
 
+    <!-- Notes -->
+
     <main>
 
       <section class="notes" aria-label="Notes">
 
-        <a class="note" href="what-is-already-there.html">
+        <a
+          class="note"
+          href="what-is-already-there.html"
+        >
           What Is Already There
         </a>
 
-        <a class="note" href="understanding-before-changing.html">
+        <a
+          class="note"
+          href="understanding-before-changing.html"
+        >
           Understanding Before Changing
         </a>
 
-        <a class="note" href="the-whole-is-experienced.html">
+        <a
+          class="note"
+          href="the-whole-is-experienced.html"
+        >
           The Whole Is Experienced
         </a>
 
-        <a class="note" href="the-value-of-leaving-things-alone.html">
+        <a
+          class="note"
+          href="the-value-of-leaving-things-alone.html"
+        >
           The Value of Leaving Things Alone
         </a>
 
       </section>
 
     </main>
+
+    <!-- Menu — only Back to home -->
+
+    <header>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Back to home</a>
+      </nav>
+
+    </header>
+
+    <!-- Footer -->
 
     <footer>
 
