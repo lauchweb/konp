@@ -16,45 +16,22 @@
   <meta name="author" content="Konpran">
   <meta name="theme-color" content="#ffffff">
 
-  <meta
-    property="og:type"
-    content="website"
-  >
-
-  <meta
-    property="og:title"
-    content="Konpran"
-  >
-
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Konpran">
   <meta
     property="og:description"
     content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
   >
+  <meta property="og:site_name" content="Konpran">
 
-  <meta
-    property="og:site_name"
-    content="Konpran"
-  >
-
-  <meta
-    name="twitter:card"
-    content="summary"
-  >
-
-  <meta
-    name="twitter:title"
-    content="Konpran"
-  >
-
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Konpran">
   <meta
     name="twitter:description"
     content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
   >
 
-  <link
-    rel="icon"
-    href="favicon.ico"
-  >
+  <link rel="icon" href="favicon.ico">
 
   <style>
     :root {
@@ -62,6 +39,11 @@
       --muted: #666666;
       --light: #888888;
       --background: #ffffff;
+
+      --content-width: 880px;
+      --text-width: 680px;
+
+      --menu-gap: 40px;
     }
 
     * {
@@ -108,13 +90,13 @@
 
     .content {
       width: 100%;
-      max-width: 880px;
+      max-width: var(--content-width);
       margin: 0 auto;
       padding: 80px 0;
     }
 
     .description {
-      max-width: 680px;
+      max-width: var(--text-width);
       margin-bottom: 28px;
 
       font-size: 18px;
@@ -133,8 +115,8 @@
 
     header {
       width: 100%;
-      max-width: 880px;
-      margin: 0 auto;
+      max-width: var(--content-width);
+      margin: var(--menu-gap) auto 0;
 
       display: flex;
       justify-content: flex-start;
@@ -228,7 +210,8 @@
       }
 
       header {
-        max-width: 880px;
+        margin-top: 32px;
+        max-width: var(--content-width);
         justify-content: flex-start;
       }
 
@@ -271,8 +254,6 @@
 
   <div class="page">
 
-    <!-- Main content -->
-
     <main>
       <section class="content" aria-label="Introduction">
 
@@ -307,8 +288,6 @@
       </section>
     </main>
 
-    <!-- Menu -->
-
     <header>
       <nav aria-label="Main navigation">
         <a href="about.html">About</a>
@@ -316,8 +295,6 @@
         <a href="mailto:talk@konpran.com">Get in touch</a>
       </nav>
     </header>
-
-    <!-- Footer -->
 
     <footer>
 
