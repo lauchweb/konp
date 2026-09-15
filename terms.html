@@ -12,6 +12,50 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Konpran">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:title"
+    content="Terms — Konpran"
+  >
+
+  <meta
+    property="og:description"
+    content="The terms governing the use of the Konpran website and its content."
+  >
+
+  <meta
+    property="og:site_name"
+    content="Konpran"
+  >
+
+  <meta
+    name="twitter:card"
+    content="summary"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Terms — Konpran"
+  >
+
+  <meta
+    name="twitter:description"
+    content="The terms governing the use of the Konpran website and its content."
+  >
+
+  <link
+    rel="icon"
+    href="favicon.ico"
+  >
+
   <style>
     :root {
       --black: #111111;
@@ -66,10 +110,8 @@
       width: 100%;
       max-width: 880px;
       margin: 0 auto;
-      padding: 80px 0 120px;
+      padding: 80px 0;
     }
-
-    /* Page title — refined to match Privacy */
 
     h1 {
       max-width: 680px;
@@ -95,7 +137,11 @@
       color: var(--muted);
     }
 
-    /* Body links — quiet and understated */
+    .description:last-of-type {
+      margin-bottom: 0;
+    }
+
+    /* Body links */
 
     .description a {
       color: var(--black);
@@ -107,6 +153,11 @@
 
     .description a:hover {
       opacity: 0.5;
+    }
+
+    .description a:focus-visible {
+      outline: 2px solid var(--black);
+      outline-offset: 4px;
     }
 
     .section-title {
@@ -161,6 +212,11 @@
       opacity: 0.5;
     }
 
+    nav a:focus-visible {
+      outline: 2px solid var(--black);
+      outline-offset: 5px;
+    }
+
     /* Footer */
 
     footer {
@@ -189,6 +245,11 @@
 
     footer a:hover {
       opacity: 0.5;
+    }
+
+    footer a:focus-visible {
+      outline: 2px solid var(--light);
+      outline-offset: 4px;
     }
 
     /* Tablet / mobile */
@@ -277,10 +338,9 @@
     <!-- Main content -->
 
     <main>
+      <section class="content" aria-labelledby="page-title">
 
-      <section class="content">
-
-        <h1>Terms</h1>
+        <h1 id="page-title">Terms</h1>
 
         <p class="description">
           By using this website, you agree to use it responsibly and in a
@@ -305,7 +365,7 @@
 
         <p class="description">
           Information about our work, approach, and capabilities on this
-          website is provided for general purposes. Nothing on the website
+          website is provided for general purposes. Nothing on this website
           creates a client relationship or constitutes a formal proposal
           or agreement.
         </p>
@@ -326,8 +386,8 @@
 
         <p class="description">
           We may update or change the content of this website and these
-          terms from time to time. The latest version will always be
-          published on this page.
+          terms from time to time. The latest version will be published
+          on this page.
         </p>
 
         <h2 class="section-title">
@@ -335,22 +395,19 @@
         </h2>
 
         <p class="description">
-          If you have a question about these terms, you can contact us at
-          <a href="mailto:terms@konpran.com">Terms of Use</a>.
+          If you have a question about these terms, contact us at
+          <a href="mailto:terms@konpran.com">terms@konpran.com</a>.
         </p>
 
       </section>
-
     </main>
 
     <!-- Menu -->
 
     <header>
-
       <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
       </nav>
-
     </header>
 
     <!-- Footer -->
