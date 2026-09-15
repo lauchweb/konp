@@ -7,10 +7,54 @@
 
   <meta
     name="description"
-    content="At Konpran, we shape products and client experiences with clarity, intention and precision."
+    content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
   >
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Konpran">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:title"
+    content="Konpran"
+  >
+
+  <meta
+    property="og:description"
+    content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
+  >
+
+  <meta
+    property="og:site_name"
+    content="Konpran"
+  >
+
+  <meta
+    name="twitter:card"
+    content="summary"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Konpran"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
+  >
+
+  <link
+    rel="icon"
+    href="favicon.ico"
+  >
 
   <style>
     :root {
@@ -66,7 +110,7 @@
       width: 100%;
       max-width: 880px;
       margin: 0 auto;
-      padding: 80px 0 120px;
+      padding: 80px 0;
     }
 
     .description {
@@ -86,6 +130,7 @@
     }
 
     /* Menu */
+
     header {
       width: 100%;
       max-width: 880px;
@@ -123,7 +168,13 @@
       opacity: 0.5;
     }
 
+    nav a:focus-visible {
+      outline: 2px solid var(--black);
+      outline-offset: 5px;
+    }
+
     /* Footer */
+
     footer {
       width: 100%;
       display: flex;
@@ -152,7 +203,13 @@
       opacity: 0.5;
     }
 
+    footer a:focus-visible {
+      outline: 2px solid var(--light);
+      outline-offset: 4px;
+    }
+
     /* Tablet / mobile */
+
     @media (max-width: 600px) {
 
       .page {
@@ -186,13 +243,16 @@
 
       footer {
         padding-top: 24px;
+
         flex-direction: column;
         align-items: flex-start;
+
         gap: 8px;
       }
     }
 
     /* Very small screens */
+
     @media (max-width: 380px) {
 
       .page {
@@ -212,52 +272,53 @@
   <div class="page">
 
     <!-- Main content -->
+
     <main>
-      <section class="content">
+      <section class="content" aria-label="Introduction">
 
         <p class="description">
-          We help organisations shape products and client experiences with
-          clarity, intention, and precision.
+          It begins with what is there.
         </p>
 
         <p class="description">
-          Combining strategic thinking with close attention to detail, we
-          create products and experiences that feel natural, considered, and
-          purposeful.
+          Look closely at how it is used, what has led to it, what surrounds
+          it, and what has simply remained. The closer the look, the more
+          the first question can shift.
         </p>
 
         <p class="description">
-          We begin by looking closely at what something is, how it is used,
-          how it feels, and what it might become in someone’s life. We
-          question what is there, explore what could be, and keep going until
-          what matters becomes clear. Then we shape it with care, bringing
-          every part together so that nothing feels added without reason and
-          nothing feels out of place.
+          Look at what affects what. A small adjustment can reach further
+          than expected. Sometimes something needs to move. Sometimes it is
+          better left alone. The work continues until what remains makes
+          sense as a whole.
         </p>
 
         <p class="description">
-          The things we make can become more than what they are. They enter
-          people’s lives, find their place in the everyday, and become part
-          of how we use, feel and see the world around us. A thing is never
-          only what it is; its meaning grows in the life it enters, in the
-          hands that hold it, and in what it quietly makes possible.
+          Then it leaves.
+        </p>
+
+        <p class="description">
+          It is used, handled, placed, remembered. It finds its place in a
+          life that can never be fully known. The task is to look closely
+          enough, question what needs questioning, and make each decision
+          count. What follows belongs to the life it enters.
         </p>
 
       </section>
     </main>
 
     <!-- Menu -->
-    <header>
 
+    <header>
       <nav aria-label="Main navigation">
         <a href="about.html">About</a>
         <a href="philosophy.html">Philosophy</a>
         <a href="mailto:talk@konpran.com">Get in touch</a>
       </nav>
-
     </header>
 
     <!-- Footer -->
+
     <footer>
 
       <span>
