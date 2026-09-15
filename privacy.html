@@ -7,10 +7,54 @@
 
   <meta
     name="description"
-    content="Konpran's privacy policy and how we handle information shared with us."
+    content="Konpran's privacy policy explains what information we receive, how it is used, and how we handle information shared with us."
   >
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Konpran">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:title"
+    content="Privacy — Konpran"
+  >
+
+  <meta
+    property="og:description"
+    content="Konpran's privacy policy explains what information we receive, how it is used, and how we handle information shared with us."
+  >
+
+  <meta
+    property="og:site_name"
+    content="Konpran"
+  >
+
+  <meta
+    name="twitter:card"
+    content="summary"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Privacy — Konpran"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Konpran's privacy policy explains what information we receive, how it is used, and how we handle information shared with us."
+  >
+
+  <link
+    rel="icon"
+    href="favicon.ico"
+  >
 
   <style>
     :root {
@@ -66,7 +110,7 @@
       width: 100%;
       max-width: 880px;
       margin: 0 auto;
-      padding: 80px 0 120px;
+      padding: 80px 0;
     }
 
     h1 {
@@ -93,7 +137,11 @@
       color: var(--muted);
     }
 
-    /* Body links — quiet and understated */
+    .description:last-of-type {
+      margin-bottom: 0;
+    }
+
+    /* Body links */
 
     .description a {
       color: var(--black);
@@ -105,6 +153,11 @@
 
     .description a:hover {
       opacity: 0.5;
+    }
+
+    .description a:focus-visible {
+      outline: 2px solid var(--black);
+      outline-offset: 4px;
     }
 
     .section-title {
@@ -159,6 +212,11 @@
       opacity: 0.5;
     }
 
+    nav a:focus-visible {
+      outline: 2px solid var(--black);
+      outline-offset: 5px;
+    }
+
     /* Footer */
 
     footer {
@@ -187,6 +245,11 @@
 
     footer a:hover {
       opacity: 0.5;
+    }
+
+    footer a:focus-visible {
+      outline: 2px solid var(--light);
+      outline-offset: 4px;
     }
 
     /* Tablet / mobile */
@@ -275,15 +338,13 @@
     <!-- Main content -->
 
     <main>
+      <section class="content" aria-labelledby="page-title">
 
-      <section class="content">
-
-        <h1>Privacy</h1>
+        <h1 id="page-title">Privacy</h1>
 
         <p class="description">
-          Konpran respects your privacy. We keep the information we receive
-          limited to what is necessary to communicate with you and provide
-          our services.
+          Konpran respects your privacy. We only use information that is
+          necessary to communicate with you and provide our services.
         </p>
 
         <h2 class="section-title">
@@ -293,8 +354,8 @@
         <p class="description">
           If you contact us by email, we receive the information you choose
           to include in your message, such as your name, email address, and
-          the contents of your enquiry. We use this information only to
-          respond to you and continue the conversation where appropriate.
+          the contents of your enquiry. We use this information to respond
+          to you and continue the conversation where appropriate.
         </p>
 
         <h2 class="section-title">
@@ -302,10 +363,10 @@
         </h2>
 
         <p class="description">
-          This website does not require an account and does not ask you to
-          provide personal information simply to browse it. We do not
-          intentionally collect personal information through forms,
-          newsletters, or marketing trackers on this site.
+          You can browse this website without creating an account or
+          providing personal information. We do not intentionally collect
+          personal information through forms, newsletters, or marketing
+          trackers on this site.
         </p>
 
         <h2 class="section-title">
@@ -314,8 +375,8 @@
 
         <p class="description">
           We do not sell or rent personal information. Information may be
-          handled by service providers that are necessary to operate our
-          website or email, but only as required for those services.
+          processed by service providers needed to operate our website or
+          email, and only as necessary for those services.
         </p>
 
         <h2 class="section-title">
@@ -324,22 +385,19 @@
 
         <p class="description">
           If you have a question about privacy or the information we hold,
-          you can contact us at
-          <a href="mailto:privacy@konpran.com">Privacy Policy</a>.
+          contact us at
+          <a href="mailto:privacy@konpran.com">privacy@konpran.com</a>.
         </p>
 
       </section>
-
     </main>
 
     <!-- Menu -->
 
     <header>
-
       <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
       </nav>
-
     </header>
 
     <!-- Footer -->
