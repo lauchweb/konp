@@ -39,6 +39,9 @@
       --muted: #666666;
       --light: #888888;
       --background: #ffffff;
+
+      /* Shared spacing between final text and menu */
+      --content-to-menu: 40px;
     }
 
     * {
@@ -80,14 +83,14 @@
     main {
       flex: 1;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
     }
 
     .content {
       width: 100%;
       max-width: 880px;
       margin: 0 auto;
-      padding: 80px 0;
+      padding: 80px 0 0;
     }
 
     .description {
@@ -106,12 +109,12 @@
       margin-bottom: 0;
     }
 
-    /* Menu */
+    /* Exact shared spacing from final text to menu */
 
     header {
       width: 100%;
       max-width: 880px;
-      margin: 0 auto;
+      margin: var(--content-to-menu) auto 0;
 
       display: flex;
       justify-content: flex-start;
@@ -194,7 +197,7 @@
       }
 
       .content {
-        padding: 60px 0;
+        padding: 60px 0 0;
       }
 
       .description {
@@ -205,6 +208,7 @@
       }
 
       header {
+        margin-top: 40px;
         max-width: 880px;
         justify-content: flex-start;
       }
