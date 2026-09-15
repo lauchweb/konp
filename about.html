@@ -3,14 +3,58 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>About — Konpran</title>
+  <title>About Konpran</title>
 
   <meta
     name="description"
-    content="Konpran shapes products, services and experiences with clarity, curiosity and close attention to detail."
+    content="Konpran works across physical and digital products, services and experiences, looking closely at what makes something what it is and what belongs."
   >
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Konpran">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:title"
+    content="About Konpran"
+  >
+
+  <meta
+    property="og:description"
+    content="Konpran works across physical and digital products, services and experiences, looking closely at what makes something what it is and what belongs."
+  >
+
+  <meta
+    property="og:site_name"
+    content="Konpran"
+  >
+
+  <meta
+    name="twitter:card"
+    content="summary"
+  >
+
+  <meta
+    name="twitter:title"
+    content="About Konpran"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Konpran works across physical and digital products, services and experiences, looking closely at what makes something what it is and what belongs."
+  >
+
+  <link
+    rel="icon"
+    href="favicon.ico"
+  >
 
   <style>
     :root {
@@ -70,8 +114,8 @@
     }
 
     h1 {
-      max-width: 680px;
-      margin-bottom: 36px;
+      max-width: 720px;
+      margin-bottom: 38px;
 
       font-size: clamp(42px, 5vw, 52px);
       line-height: 1.05;
@@ -82,7 +126,7 @@
     }
 
     .description {
-      max-width: 680px;
+      max-width: 720px;
       margin-bottom: 28px;
 
       font-size: 18px;
@@ -136,6 +180,11 @@
       opacity: 0.5;
     }
 
+    nav a:focus-visible {
+      outline: 2px solid var(--black);
+      outline-offset: 5px;
+    }
+
     /* Footer */
 
     footer {
@@ -164,6 +213,11 @@
 
     footer a:hover {
       opacity: 0.5;
+    }
+
+    footer a:focus-visible {
+      outline: 2px solid var(--light);
+      outline-offset: 4px;
     }
 
     /* Tablet / mobile */
@@ -244,53 +298,54 @@
     <!-- Main content -->
 
     <main>
+      <section class="content" aria-labelledby="page-title">
 
-      <section class="content">
-
-        <h1>About</h1>
+        <h1 id="page-title">About</h1>
 
         <p class="description">
-          Years of looking closely at products have shaped a way of seeing
-          that goes beyond function — into proportion, detail, material,
-          finish, and the experience of the whole.
+          Years of working with products have taught us to look closely at
+          what makes something what it is: its proportions, materials,
+          details, finish, and the way these things come together in use.
         </p>
 
         <p class="description">
-          A background rooted in product, together with a strong sense of
-          vision and aesthetics, informs how we approach physical and
-          digital products, services, and experiences. We look at what
-          something is trying to be, what belongs to it, what does not,
-          and how each part contributes to the whole.
+          Rooted in product, the practice extends across physical and digital
+          products, services, and experiences. Each is considered in its own
+          circumstances: what belongs to it, what does not, and what changes
+          when one part is altered.
         </p>
 
         <p class="description">
-          Creating something people want to own, use, and live with is about
-          more than the thing itself. It is about everything surrounding it —
-          how it is presented, received, used, and remembered. The product
-          and the experience around it are considered together because each
-          shapes the other.
+          Time is spent with the subject before anything is decided. Its
+          circumstances, the people around it, the way it is encountered,
+          and the decisions that have shaped it all matter. What seems settled
+          is questioned. What might otherwise go unnoticed is given room to
+          surface.
         </p>
 
         <p class="description">
-          Immersion in the subject is essential. Understanding the context,
-          the materials, the details, the people, and the intentions behind
-          something creates the basis for better decisions. From the product
-          itself to the experience around it, the work is considered as one.
+          From there, the making begins. Sometimes something needs to be added
+          or changed. Sometimes something needs to be removed. Sometimes the
+          right decision is to leave it alone. Each part should have a reason
+          to be there, while the whole remains clear, natural and unforced.
+        </p>
+
+        <p class="description">
+          The aim is not to add more, but to understand enough to know what
+          belongs.
         </p>
 
       </section>
-
     </main>
 
     <!-- Menu -->
 
     <header>
-
       <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
+        <a href="philosophy.html">Philosophy</a>
         <a href="mailto:talk@konpran.com">Get in touch</a>
       </nav>
-
     </header>
 
     <!-- Footer -->
