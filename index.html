@@ -39,11 +39,6 @@
       --muted: #666666;
       --light: #888888;
       --background: #ffffff;
-
-      --content-width: 880px;
-      --text-width: 680px;
-
-      --menu-gap: 40px;
     }
 
     * {
@@ -90,13 +85,13 @@
 
     .content {
       width: 100%;
-      max-width: var(--content-width);
+      max-width: 880px;
       margin: 0 auto;
       padding: 80px 0;
     }
 
     .description {
-      max-width: var(--text-width);
+      max-width: 680px;
       margin-bottom: 28px;
 
       font-size: 18px;
@@ -115,8 +110,8 @@
 
     header {
       width: 100%;
-      max-width: var(--content-width);
-      margin: var(--menu-gap) auto 0;
+      max-width: 880px;
+      margin: 0 auto;
 
       display: flex;
       justify-content: flex-start;
@@ -210,8 +205,7 @@
       }
 
       header {
-        margin-top: 32px;
-        max-width: var(--content-width);
+        max-width: 880px;
         justify-content: flex-start;
       }
 
@@ -255,6 +249,7 @@
   <div class="page">
 
     <main>
+
       <section class="content" aria-label="Introduction">
 
         <p class="description">
@@ -286,14 +281,17 @@
         </p>
 
       </section>
+
     </main>
 
     <header>
+
       <nav aria-label="Main navigation">
         <a href="about.html">About</a>
         <a href="philosophy.html">Philosophy</a>
         <a href="mailto:talk@konpran.com">Get in touch</a>
       </nav>
+
     </header>
 
     <footer>
